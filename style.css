@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Born"; /* nombre que tú eliges */
+  src: url("fonts/Born.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  letter-spacing: 2px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(15, 15, 15);
+  background-image: url("https://www.pngall.com/wp-content/uploads/12/Lines-PNG-HD-Image.png");
+  margin: 0;
+  color: white;
+  font-family: "Born";
+}
+nav {
+  position: absolute;
+  top: 10px;
+  padding: 1rem;
+  border-radius: 20px;
+  right: 20px;
+
+  background-color: rgba(212, 212, 212, 0.49);
+  border: 1px solid rgba(255, 255, 255, 0.107);
+  backdrop-filter: blur(5px);
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  h1 {
+    font-size: 100px;
+    margin: 50px;
+  }
+}
+
+/* En la página principal (Verb of the day) */
+.verb-page .containerW {
+  h1 {
+    margin: 0;
+    font-size: 200px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  h3 {
+    color: lightgreen;
+    font-size: 30px;
+  }
+}
+
+/* En la página de phrasal verbs */
+.phrasal-page .containerW {
+  h1 {
+    margin: 0;
+    font-size: 200px;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: lightgreen;
+    font-size: 30px;
+  }
+}
+
+.containerW {
+  text-align: center;
+  button {
+    padding: 1rem;
+    background-color: rgba(21, 21, 21, 0);
+    border: 1px solid rgba(255, 255, 255, 0.107);
+    border-radius: 20px;
+    color: white;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: 0.3s all linear;
+    &:hover {
+      transform: scale(1.1);
+      background-color: rgba(255, 255, 255, 0.104);
+    }
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+.cards {
+  background-color: rgba(21, 21, 21, 0);
+  width: 320px;
+  height: max-content;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  font-size: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.107);
+}
