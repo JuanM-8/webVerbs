@@ -607,9 +607,10 @@ function palabraA() {
   const verbo = palabras[resultado];
   Wespa.textContent = verbo.translation;
   if (verbo) {
-    presenteP.textContent = `Presente: ${verbo.present}`;
-    pasadoP.textContent = `Pasado: ${verbo.past}`;
-    participioP.textContent = `Participio pasado: ${verbo.participle}`;
+    presenteP.innerHTML = `<span class="first-word">Presente:</span> ${verbo.present}`;
+    pasadoP.innerHTML = `<span class="first-word">Pasado:</span> ${verbo.past}`;
+    participioP.innerHTML = `<span class="first-word">Participio pasado:</span> ${verbo.participle}`;
+
   } else {
     presenteP.textContent = "Presente: -";
     pasadoP.textContent = "Pasado: -";

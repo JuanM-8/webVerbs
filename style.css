@@ -6,8 +6,9 @@
 }
 
 body {
+  height: 100vh;
   letter-spacing: 2px;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   overflow-y: hidden;
   background-color: rgb(15, 15, 15);
   background-image: url("https://www.pngall.com/wp-content/uploads/12/Lines-PNG-HD-Image.png");
@@ -36,7 +37,8 @@ header {
   text-align: center;
   margin: auto;
   h1 {
-    font-size: 100px;
+    font-size: clamp(80px, 5vw + 25px, 300px);
+
     margin: 50px;
   }
 }
@@ -45,13 +47,14 @@ header {
 .verb-page .containerW {
   h1 {
     margin: 0;
-    font-size: 200px;
+    font-size: clamp(150px, 10vw + 25px, 300px);
     text-transform: uppercase;
     letter-spacing: 5px;
   }
   h3 {
     color: lightgreen;
     font-size: 30px;
+    margin: 0 0 40px 0;
   }
 }
 
@@ -59,12 +62,14 @@ header {
 .phrasal-page .containerW {
   h1 {
     margin: 0;
-    font-size: 200px;
+    font-size: clamp(150px, 10vw + 25px, 300px);
+
     text-transform: uppercase;
   }
   h3 {
     color: lightgreen;
     font-size: 30px;
+    margin: 0 0 40px 0;
   }
 }
 
@@ -85,15 +90,16 @@ header {
     }
   }
 }
+
 .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 60px;
 }
 .cards {
   background-color: rgba(21, 21, 21, 0);
-  width: 320px;
+  width: 700px;
   height: max-content;
   backdrop-filter: blur(5px);
   display: flex;
@@ -103,4 +109,36 @@ header {
   padding: 1rem 2rem;
   font-size: 25px;
   border: 1px solid rgba(255, 255, 255, 0.107);
+}
+.conjugaciones{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  
+}
+.first-word{
+  color: lightgreen;
+  
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%);
+  color: #ffffff73;
+ text-align: center;
+}
+
+@media (width <= 550px) {
+  .cards{
+    width: 250px;
+  }
+  .conjugaciones{
+    display: block;
+  }
+  footer{
+    margin-top: 10px;
+    
+  }
 }
