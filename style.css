@@ -5,17 +5,18 @@
   font-style: normal;
 }
 
-body {
-  height: 100vh;
+html,body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   letter-spacing: 2px;
-  overflow-x: hidden; 
-  overflow-y: hidden;
   background-color: rgb(15, 15, 15);
   background-image: url("https://www.pngall.com/wp-content/uploads/12/Lines-PNG-HD-Image.png");
   margin: 0;
   color: white;
   font-family: "Born";
 }
+
 nav {
   position: absolute;
   top: 10px;
@@ -35,7 +36,6 @@ z-index: 999;
 
 header {
   text-align: center;
-  margin: auto;
   h1 {
     font-size: clamp(80px, 5vw + 25px, 300px);
 
@@ -45,6 +45,8 @@ header {
 
 /* En la página principal (Verb of the day) */
 .verb-page .containerW {
+    overflow-y: hidden; 
+
   h1 {
     margin: 0;
     font-size: clamp(150px, 10vw + 25px, 300px);
@@ -60,6 +62,8 @@ header {
 
 /* En la página de phrasal verbs */
 .phrasal-page .containerW {
+    overflow-y: hidden; 
+
   h1 {
     margin: 0;
     font-size: clamp(150px, 10vw + 25px, 300px);
@@ -122,12 +126,11 @@ header {
   
 }
 footer{
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translate(50%);
+  
+ margin-top: auto;
   color: #ffffff73;
- text-align: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 @media (width <= 550px) {
@@ -141,7 +144,7 @@ footer{
     display: block;
   }
   footer{
-    position: relative;
+    position: absolute;
     margin-top: 10px;
     
   }
