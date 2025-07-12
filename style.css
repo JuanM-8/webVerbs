@@ -143,9 +143,4 @@ footer{
   .conjugaciones{
     display: block;
   }
-  footer{
-    position: absolute;
-    margin-top: 10px;
-    
-  }
 }
