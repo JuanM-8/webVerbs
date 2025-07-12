@@ -1,6 +1,6 @@
 const btnWord = document.getElementById("btnWord");
 const Word = document.getElementById("Word");
-const h3 = document.getElementById("h3");
+const Wespa = document.getElementById("wespa");
 
 const phrasalVerbs = {
   "ask out": "invitar a salir (románticamente)",
@@ -120,7 +120,7 @@ function palabraA() {
   const traduccion = phrasalVerbs[resultado]
   // Mostrar el verbo en el h1 con animación
   Word.textContent = resultado;
-  h3.textContent=traduccion
+  Wespa.textContent = traduccion;
   Word.classList.remove("animate__bounceInUp");
   void Word.offsetWidth;
   Word.classList.add("animate__bounceInUp");

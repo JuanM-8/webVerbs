@@ -11,7 +11,7 @@ html,body {
   flex-direction: column;
   letter-spacing: 2px;
   background-color: rgb(15, 15, 15);
-  background-image: url("https://www.pngall.com/wp-content/uploads/12/Lines-PNG-HD-Image.png");
+  background-image: url("imgs/bg.avif");
   margin: 0;
   color: white;
   font-family: "Born";
@@ -38,7 +38,7 @@ header {
   text-align: center;
   h1 {
     font-size: clamp(80px, 5vw + 25px, 300px);
-
+color: rgb(166, 163, 163);
     margin: 50px;
   }
 }
@@ -53,7 +53,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 5px;
   }
-  h3 {
+  h2 {
     color: lightgreen;
     font-size: 30px;
     margin: 0 0 40px 0;
@@ -66,11 +66,11 @@ header {
 
   h1 {
     margin: 0;
-    font-size: clamp(150px, 10vw + 25px, 300px);
+    font-size: clamp(120px, 10vw + 25px, 300px);
 
     text-transform: uppercase;
   }
-  h3 {
+  h2 {
     color: lightgreen;
     font-size: 30px;
     margin: 0 0 40px 0;
