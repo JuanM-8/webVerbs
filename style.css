@@ -53,6 +53,7 @@ header {
     font-size: clamp(150px, 10vw + 25px, 300px);
     text-transform: uppercase;
     letter-spacing: 5px;
+    word-break: break-word;
   }
   h2 {
     color: lightgreen;
@@ -67,11 +68,10 @@ header {
   margin: auto;
   padding-bottom: 10px;
 
-
   h1 {
     margin: 0;
     font-size: clamp(120px, 10vw + 25px, 300px);
-
+   
     text-transform: uppercase;
   }
   h2 {
